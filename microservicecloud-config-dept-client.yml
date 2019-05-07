@@ -24,8 +24,7 @@ spring:
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
   type-aliases-package: com.gcc.springcloud.entities    # 所有Entity别名类所在包
-  mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+  mapper-locations: classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
 
 eureka:
   client: #客户端注册进eureka服务列表内
@@ -41,7 +40,11 @@ info:
   company.name: www.atguigu.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$  
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> a5f29cc42e448914d40ce018d708f9dacefff2b7
 ---
 server:
   port: 8001
@@ -53,7 +56,11 @@ spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
         driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
+<<<<<<< HEAD
         url: jdbc:mysql://localhost:3306/clouddb02              # 数据库名称
+=======
+        url: jdbc:mysql://localhost:3306/clouddb03             # 数据库名称
+>>>>>>> a5f29cc42e448914d40ce018d708f9dacefff2b7
         username: root
         password: 123
         dbcp2:
@@ -64,8 +71,12 @@ spring:
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
   type-aliases-package: com.gcc.springcloud.entities    # 所有Entity别名类所在包
+<<<<<<< HEAD
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+=======
+  mapper-locations: classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+>>>>>>> a5f29cc42e448914d40ce018d708f9dacefff2b7
 
 eureka:
   client: #客户端注册进eureka服务列表内
@@ -81,4 +92,7 @@ info:
   company.name: www.atguigu.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$  
+<<<<<<< HEAD
   
+=======
+>>>>>>> a5f29cc42e448914d40ce018d708f9dacefff2b7
